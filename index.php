@@ -16,7 +16,7 @@
         </a>
     </nav>
     <div class="container col-6 mb-4">
-        <form action="signup.php" method="POST" id="signup">
+        <form action=<?php echo htmlspecialchars("signup.php")?> method="POST" id="signup">
             <div class="form-group">
                 <label for="fname">First Name</label>
                 <input class="form-control" type="text" name="fname" id="fname" required>
